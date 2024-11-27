@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Webpage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="navbar-logo">
+        <img src="quiz-logo.png" alt="Quiz Logo" class="navbar-logo-img">
+        <span>Quiz Karo</span>
+      </a>
+      <button class="navbar-toggle" id="toggle-btn">
+        <span class="sr-only">Toggle menu</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="navbar-hamburger">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+      <ul class="navbar-links" id="navbar-links">
+        <li><a href="/" class="navbar-link active">Home</a></li>
+        <li><a href="/quiz.html" class="navbar-link">Quiz</a></li>
+        <li><a href="/imgShowCase-index.html" class="navbar-link">Image Showcase</a></li>
+        <li><a href="/weatherAPIShowCase.html" class="navbar-link">WeatherAPI</a></li>
+        <li><a href="/JokeAPIShowCase.html" class="navbar-link">JokeAPI</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Welcome to My Interactive Webpage</h1>
+    <p>Explore features like Quiz, Image Showcase, Weather, and Jokes!</p>
+  </header>
+
+  <!-- Feature Cards Section -->
+  <main class="features">
+    <div class="feature-card" onclick="navigateTo('/quiz.html')">
+      <h2>Quiz</h2>
+      <p>Test your knowledge with an interactive quiz.</p>
+    </div>
+    <div class="feature-card" onclick="navigateTo('/imgShowCase-index.html')">
+      <h2>Image Showcase</h2>
+      <p>Browse through a beautiful image carousel.</p>
+    </div>
+    <div class="feature-card" onclick="navigateTo('/weatherAPIShowCase.html')">
+      <h2>WeatherAPI</h2>
+      <p>Check real-time weather updates for your city.</p>
+    </div>
+    <div class="feature-card" onclick="navigateTo('/JokeAPIShowCase.html')">
+      <h2>JokeAPI</h2>
+      <p>Brighten your day with a random joke!</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
